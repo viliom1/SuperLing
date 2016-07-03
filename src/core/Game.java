@@ -1,5 +1,6 @@
 package core;
 
+import core.Interfaces.GameLaunchable;
 import core.gfx.ImageLoader;
 import display.Display;
 
@@ -9,7 +10,7 @@ import java.awt.image.BufferStrategy;
 /**
  * Created by Vili on 29-Apr-16.
  */
-public class Game implements Runnable {
+public class Game implements GameLaunchable {
     private String title;
     private int width,height;
     private Thread thread;
